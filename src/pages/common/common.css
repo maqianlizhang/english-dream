@@ -1,0 +1,14 @@
+.common-wrapper {
+  width: 1024px;
+  margin: 0 auto;
+ }
+.common-logo-img {
+  width: 200px;
+  height: 70px;
+  display: block;
+  margin: 10px auto;
+}
+.ant-menu-item {
+	line-height: 25px;
+}
+
