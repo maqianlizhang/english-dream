@@ -2,12 +2,30 @@ import React, { Component } from 'react'
 import actionCreators from './actionCreators'
 import { connect } from 'react-redux'
 import './common.css'
-import { Row, Col, Menu } from 'antd';
+import { Row, Col, Menu, Input, Button } from 'antd'
+const SubMenu = Menu.SubMenu
 class ComponentWrapper extends Component {
 	render() {
 		return (
 			<div className="common-wrapper">
-      <div></div>
+        <Row className="header">
+          <Col span={2}>
+            <Menu>
+              <Menu.Item>网站手机版</Menu.Item>
+            </Menu></Col>
+            <Col span={6}>
+            <Menu>
+              <Menu.Item>学英语请加微信号:easyvoa2014</Menu.Item>
+            </Menu>
+            </Col>
+            <Col span={10}></Col>
+          <Col span={4}>
+            <Input></Input>
+          </Col>
+           <Col span={2}>
+            <Button>搜索</Button>
+          </Col>
+        </Row>
         <Row>
           <Col span={6}>
             <img className="common-logo-img"src='http://www.easyvoa.com/templets/images/newlogo.png' alt='图片加载失败'/>
