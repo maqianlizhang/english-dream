@@ -5,7 +5,7 @@
 .common-wrapper .header {
 	padding: 4px 0;
 	height: 30px;
-	line-height: 30px;
+	border-bottom: 1px solid #d6d6d6;
 }
 .common-wrapper .ant-menu-vertical .ant-menu-item{
 	height: 12px;
@@ -14,27 +14,77 @@
 	padding: 0 ;
 	text-align: center;
 }
-.common-wrapper .ant-menu-vertical .ant-menu-item::after {
-	content: "";
-	height: 20px;
-	width: 1px;
-	border-right: 1px solid #eee;
+
+.common-wrapper .ant-input,.common-wrapper .ant-btn {
+	height: 22px;
 }
-.common-wrapper .ant-input {
-	height: 20px
+.common-wrapper .ant-btn {
+	margin-left: 9px;
 }
-    
+ 
+ .common-wrapper .nav-list {
+   height: 70px;
+ }  
+
+ .common-wrapper .nav-list .ant-col-6 {
+ 	width: 334px;
+ }
+ .common-wrapper .nav-list .ant-col-18 {
+ 	width: 690px;
+ }
+
+ .common-wrapper .ant-menu-item{
+ 	font-size: 12px;
+ 	line-height: 26px;
+ }
+
+.common-wrapper .nav-list .ant-menu-item {
+	line-height: 30px;
+}
+ .common-wrapper .english-list {
+ 	font-size: 12px;
+ 	height: 110px;
+ 	text-align: center;
+ }
+ .english-nav {
+ 	background: #fdf4e5;
+ 	display: block;
+ 	line-height: 26px;
+ 	border: 1px solid #ffe9d3;
+ 	border-left: 0;
+ }
 .common-logo-img {
   width: 200px;
   height: 70px;
   display: block;
-  margin: 10px auto;
+  margin: 0 auto;
+}
+.common-wrapper .nav-list .ant-menu-horizontal {
+	height: 70px;
 }
 .ant-menu-item {
 	line-height: 25px;
 }
 .common-wrapper .ant-menu-horizontal .ant-menu-item .ant-menu-item-active {
 	border: 0
+}
+
+.foot-container {
+	border: 1px solid #aaa;
+	border-bottom: 0;
+	height: 80px;
+	font-size: 12px;
+	text-align: center;
+}
+
+.foot-con {
+	margin: 9px 0 19px 0;
+}
+
+.foot-con-important {
+	color: #06c;
+	font-weight: bold;
+	cursor: pointer;
 }
 
 

@@ -3,7 +3,7 @@ import actionCreators from './actionCreators'
 import { connect } from 'react-redux'
 import './common.css'
 import { Row, Col, Menu, Input, Button } from 'antd'
-const SubMenu = Menu.SubMenu
+import Foot from './Foot'
 class ComponentWrapper extends Component {
 	render() {
 		return (
@@ -12,13 +12,14 @@ class ComponentWrapper extends Component {
           <Col span={2}>
             <Menu>
               <Menu.Item>网站手机版</Menu.Item>
-            </Menu></Col>
-            <Col span={6}>
+            </Menu>
+            </Col>
+            <Col span={5}>
             <Menu>
               <Menu.Item>学英语请加微信号:easyvoa2014</Menu.Item>
             </Menu>
             </Col>
-            <Col span={10}></Col>
+            <Col span={11}></Col>
           <Col span={4}>
             <Input></Input>
           </Col>
@@ -26,7 +27,7 @@ class ComponentWrapper extends Component {
             <Button>搜索</Button>
           </Col>
         </Row>
-        <Row>
+        <Row className="nav-list">
           <Col span={6}>
             <img className="common-logo-img"src='http://www.easyvoa.com/templets/images/newlogo.png' alt='图片加载失败'/>
           </Col>
@@ -40,12 +41,12 @@ class ComponentWrapper extends Component {
           </Menu>
           </Col>
         </Row>
-        <Row>
+        <Row className="english-list">
             {
               this.props.english.map((value) => {
                 return (<Col span={value.col} 
                           key={value.id}>
-                          {value.title}
+                          <span className="english-nav">{value.title}</span>
                             <Menu mode="horizontal">
                               {
                                 value.list.map((lists) => {
@@ -60,6 +61,7 @@ class ComponentWrapper extends Component {
           
         </Row> 
 			 {this.props.children}
+       <Foot></Foot>
 			</div>)
 	}
 

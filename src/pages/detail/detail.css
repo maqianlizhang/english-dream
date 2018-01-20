@@ -1,0 +1,46 @@
+.detail-main {
+	color: #007dc6;
+	text-align: center;
+	font-size: 12px;
+	line-height: 12px;
+}
+.detail-title {
+	font-size: 16px;
+	margin: 19px 0 14px 0;
+	font-weight: bold;
+}
+.detail-info {
+	padding: 0 12px;
+}
+.detail-audio {
+	height: 34px;
+	position: relative;
+	width: 400px;
+	margin: 0 auto;
+}
+.detail-audio span {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: inline-block;
+	height: 34px;
+	line-height: 34px;
+}
+.detail-con {
+	display: flex;
+}
+
+.Link {
+	line-height: 25px;
+	padding-left: 14px;
+	background: #777dff;
+	font-size: 12px;
+	color: #fff;
+}
+.foot-list {
+
+}
+.foot-item {
+	float: left;
+	width: 50%;
+}
