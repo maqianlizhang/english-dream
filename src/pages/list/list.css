@@ -1,0 +1,73 @@
+.list-header {
+	margin-top: 4px;
+}
+
+.list-header-img {
+	width: 338px;
+	margin-right: 150px;
+}
+.list-header-moveimg {
+	height: 100%;
+}
+
+.list-navs .ant-layout-header {
+	color: #cc0000;
+	padding-left: 0;
+	background: #e5e5e5;
+	border: 1px solid #b4b4b4;
+	line-height: 43px;
+	height: 43px;
+	cursor: pointer;
+}
+
+.list-nav {
+	display: inline-block;
+	font-size: 20px;
+	height: 100%;
+	padding: 0 20px;
+	border-right: 1px solid #b4b4b4;
+
+}
+.list-nav a {
+	color: red;
+	text-decoration: none;
+}
+
+
+.ant-layout-content {
+	min-height: 500px;
+	border: 1px solid #ec0012;
+	background: #fff;
+	width: 660px;
+}
+.list-navs .ant-layout-sider {
+	min-height: 500px;
+	border: 1px solid #ec0012;
+	background: #fff;
+	max-width: 300px!important;
+}
+
+.left-list {
+	padding-top: 55px;
+}
+.list-imgs {
+	float: left;
+	padding-left: 34px;
+}
+.before {
+	margin-left: 30px;
+	line-height: 50px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #333;
+	border-bottom: 1px dashed #ccc;
+}
+
+.list-item {
+	line-height: 30px;
+	font-size: 12px;
+	padding-left: 40px;
+	list-style:disc inside;
+	color: #004190;
+	cursor: pointer;
+}

@@ -1,7 +1,4 @@
-.index-nav .index-nav-con {
-	height: 25px;
-	border: 1px solid #ccc;
-}
+
 .hot-tag {
 	padding-left: 9px;
   font-size: 12px;
@@ -18,54 +15,13 @@
   display: block;
   width: 65px;
 }
-.index-nav .index-nav-con .ant-btn-danger {
-  color: #06c;
-  width: 189px;
-  border-color: #06c;
-  border-radius: 10px;
-  line-height: 16px;
-  height: 16px;
-  margin-top: 4px;
-
-}
-.index-content-title {
-  padding: 0;
-  background: #ff4444;
-  color: #fff;
-  display: block;
-  line-height: 25px;
-}
-.index-nav .index-nav-con .ant-btn-danger:hover {
-  background: #06c;
-  color: #fff;
-}
-.index-nav .ant-list-split .ant-list-item {
-  border-bottom: 0;
-  line-height: 20px;
-  cursor: pointer;
-  display: inline-block;
-
-}
-.index-nav .ant-list-split .ant-list-item .ant-list-item-meta .item-con:hover {
-  background: #5ec3ef;
-}
-.index-nav .ant-list-item-meta-title {
-  color: #3b8070;
-}
-.index-nav .item-title {
-  color: #049;
-}
-.index-content .ant-list-item {
-  display: block;
-  height: 20px;
-  line-height: 20px;
-  font-size: 12px;
-  
-}
 
 .friendLink-title {
   line-height: 25px;
   color: #fff;
   background: #0066cc;
   padding-left: 14px;
+}
+.ant-spin-container .ant-list-item {
+  width: 100%;
 }

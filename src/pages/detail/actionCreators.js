@@ -1,18 +1,20 @@
 import actionTypes from './actionTypes'
 
-const getDetailInfoAction = (detail, link) => ({
+const getDetailInfoAction = (detail) => ({
   type: actionTypes.CHANGE_DETAILINFO,
-  detail: detail,
-  Link: link
+  detail: detail
 })
 
 export default {
-  getDetailInfo(value) {
+  getDetailInfo(id) {
+  let detail = {}
     return (dispatch) => {
-      fetch('/api/detail.json')
+      fetch('/api/detail.json?id='+id)
         .then((res)=>res.json())
         .then((res)=> {
-          dispatch(getDetailInfoAction(res.data.detail, res.data.Link))
+          res.detail.title = res.title
+          detail = res.detail
+          dispatch(getDetailInfoAction(detail))
         })
         .catch(()=>{
           console.log('获取详情失败')

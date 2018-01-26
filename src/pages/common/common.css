@@ -13,6 +13,7 @@
 	font-size: 12px;
 	padding: 0 ;
 	text-align: center;
+  color: #333;
 }
 
 .common-wrapper .ant-input,.common-wrapper .ant-btn {
@@ -45,6 +46,10 @@
  	font-size: 12px;
  	height: 110px;
  	text-align: center;
+ }
+
+ .common-wrapper .english-list .ant-menu-item a::before {
+  float: left;
  }
  .english-nav {
  	background: #fdf4e5;
@@ -87,4 +92,52 @@
 	cursor: pointer;
 }
 
+.common-wrapper .index-nav-con .ant-btn-danger {
+  color: #06c;
+  width: 189px;
+  border-color: #06c;
+  border-radius: 10px;
+  line-height: 16px;
+  height: 16px;
+  margin-top: 4px;
+
+}
+.index-content-title {
+  padding: 0;
+  background: #ff4444;
+  color: #fff;
+  display: block;
+  line-height: 25px;
+}
+.common-wrapper .index-nav-con .ant-btn-danger:hover {
+  background: #06c;
+  color: #fff;
+}
+.common-wrapper .ant-list-split .ant-list-item {
+  border-bottom: 0;
+  line-height: 20px;
+  cursor: pointer;
+
+
+}
+
+.common-wrapper .ant-list-split .ant-list-item .ant-list-item-meta .item-con:hover {
+  background: #5ec3ef;
+}
+.common-wrapper .ant-list-item-meta-title {
+  color: #3b8070;
+}
+.common-wrapper.item-title {
+  color: #049;
+}
+.common-wrapper .ant-list-item {
+  line-height: 20px;
+  font-size: 12px;
+  padding: 0 
+  
+}
+.common-wrapper .index-nav-con {
+	height: 25px;
+	border: 1px solid #ccc;
+}
 

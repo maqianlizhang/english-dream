@@ -1,17 +1,19 @@
 import actionTypes from './actionTypes'
 
 const defaultState = {
-	detail: {}
+	info: {
+		book: [],
+		con: [],
+    img: {}
+	}
 }
 
 export default (state = defaultState, action) => {
   switch(action.type) {
-    case actionTypes.CHANGE_DETAILINFO:
-    console.log(action)
+    case actionTypes.CHANGE_LIST_INFO:
       return {
-        detail: action.detail
+        info: action.info
       }
-     default: return state
-  }
-	
+      default: return state
+  }	
 }

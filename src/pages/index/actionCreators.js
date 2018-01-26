@@ -1,18 +1,29 @@
 import actionTypes from './actionTypes'
 
-const getIndexInfoAction = (list, friendLink) => ({
+const getIndexInfoAction = (list) => ({
   type: actionTypes.CHANGE_LIST,
-  list: list,
-  friendLink: friendLink
+  list: list
 })
 export default {
-	getIndexInfo (id) {
+	getIndexInfo () {
     return (dispatch) => {
       fetch('/api/index.json')
         .then((res)=> res.json())
         .then((res)=> {
-         dispatch(getIndexInfoAction(res.data.list,res.data.friendLink))
+           dispatch(getIndexInfoAction(res.list))
+         })
+        .catch(()=>{
+          console.log('shibai')
         })
+    }
+  },
+  changeIndexInfo (link) {
+    return (dispatch) => {
+      fetch('/api/detaillist.json?link=' + link)
+        .then((res)=> res.json())
+        .then((res)=> {
+           dispatch(getIndexInfoAction(res.list))
+         })
         .catch(()=>{
           console.log('shibai')
         })

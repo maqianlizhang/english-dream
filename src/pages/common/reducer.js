@@ -2,7 +2,7 @@ import actionTypes from './actionTypes'
 
 const defaultState = {
 	list: [],
-  english: []
+	english: []
 }
 
 export default (state = defaultState, action) => {
@@ -12,6 +12,7 @@ export default (state = defaultState, action) => {
         list: action.list,
         english: action.english
       }
+    
     default: return state
   }
 	

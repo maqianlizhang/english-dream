@@ -1,15 +1,14 @@
 import React, { Component } from 'react'
 
 import { connect } from 'react-redux'
-
+import { Link } from 'react-router'
 class Main extends Component {
 	render() {
 		return (<div>
-
         <p className="detail-main detail-title">{this.props.detail.title}</p>
         <p className="detail-main">
             <span className="detail-info">时间：{this.props.detail.time}</span>
-            <span className="detail-info">来源：{this.props.detail.source}</span>
+            <span className="detail-info">来源：{this.props.detail.from}</span>
             <span className="detail-info">收听下载次数：{this.props.detail.count}次</span>
         </p>
         <p className="detail-main detail-audio">
@@ -24,10 +23,8 @@ class Main extends Component {
         <div className="detail-con">
             <div dangerouslySetInnerHTML={{__html:this.props.detail.con }}></div>
         </div>
-        
       </div>)
 	}
-   
 }
 
 const mapStateToProps = (state) => ({

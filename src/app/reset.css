@@ -24,3 +24,6 @@ body {font-family: Arial, "Microsoft Yahei", "Helvetica Neue", Helvetica, sans-s
 hr {height: .02rem;margin: .1rem 0;border: medium none;border-top: .02rem solid #cacaca;}
 a {color: #25a4bb;text-decoration: none;}
 .clear::after {height: 0;display: block;overflow: hidden;visibility: hidden;clear: both;content: "."}
+html,body{
+	overflow-x: scroll;
+}
